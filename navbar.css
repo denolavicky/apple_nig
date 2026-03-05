@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.9176470588);
+  position: sticky;
+  top: 0;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.nav--List {
+  display: flex;
+  list-style: none;
+  gap: 11em;
+  align-self: center;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #bdbdc5;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.icon {
+  fill: #a4a4a4;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.icon:hover {
+  fill: rgb(255, 255, 255);
+}
+
+.icon2 {
+  fill: #a4a4a4;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.icon2:hover {
+  color: rgb(255, 255, 255);
+}
+
+.navContainer {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown--mac {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9176470588);
+  color: #6e6e73;
+  padding: 3em 0;
+  font-size: 17px;
+}
+
+.dropdown--ipad {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9176470588);
+  color: #6e6e73;
+  padding: 3.5em 0;
+  font-size: 17px;
+}
+
+.dropdown--iphone {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9176470588);
+  color: #6e6e73;
+  padding: 3.5em 0;
+  font-size: 17px;
+}
+
+.dropdown--support {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9176470588);
+  color: #6e6e73;
+  padding: 3.5em 0;
+  font-size: 17px;
+}
+
+.dropdown--where {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9176470588);
+  color: #6e6e73;
+  padding: 3.5em 0;
+  font-size: 17px;
+}
+
+.dropdown-wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.mac-drop:hover .dropdown--mac {
+  display: block;
+}
+
+.ipad-drop:hover .dropdown--ipad {
+  display: block;
+}
+
+.iphone-drop:hover .dropdown--iphone {
+  display: block;
+}
+
+.support-drop:hover .dropdown--support {
+  display: block;
+}
+
+.where-drop:hover .dropdown--where {
+  display: block;
+}
+
+.dropdown--ipad li a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+.dropdown--mac li a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+.dropdown--ipad li:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.dropdown--mac li:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.dropdown--iphone li a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+.dropdown--iphone li:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.dropdown--support li a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+.dropdown--support li:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.dropdown--where li a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+.dropdown--where li:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.explore {
+  font-size: 9px;
+}
+
+#header-title {
+  font-size: 56px;
+  line-height: 60px;
+  font-weight: 600;
+  margin: 0.5em 1.78em;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar ul {
+    gap: 3em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    gap: 2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar ul {
+    gap: 1em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .navbar ul {
+    gap: 0.5em;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map */
