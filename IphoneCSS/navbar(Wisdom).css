@@ -1,0 +1,288 @@
+header {
+  background: rgb(21, 21, 21);
+  position: sticky;
+  top: 0;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav--List {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #a4a4a4;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.navbar .icon {
+  fill: #a4a4a4;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.navbar .icon:hover {
+  fill: rgb(255, 255, 255);
+}
+
+.navbar .icon2 {
+  fill: #a4a4a4;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar .icon2:hover {
+  color: rgb(255, 255, 255);
+}
+
+.navbar .navContainer {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.navbar .dropdown--mac {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  background-color: rgb(21, 21, 21);
+  color: #cbcbd1;
+  padding: 3em 0;
+  font-size: 23px;
+  font-weight: 500;
+  z-index: 1000;
+}
+
+.navbar .dropdown--mac div {
+  width: 800px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.navbar .dropdown--mac li {
+  line-height: 1.8;
+}
+
+.navbar .dropdown--ipad {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  background-color: rgb(21, 21, 21);
+  color: #cbcbd1;
+  padding: 3em 0;
+  font-size: 23px;
+  font-weight: 500;
+  z-index: 1000;
+}
+
+.navbar .dropdown--ipad div {
+  width: 800px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.navbar .dropdown--ipad li {
+  line-height: 1.8;
+}
+
+.navbar .dropdown--iphone {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  background-color: rgb(21, 21, 21);
+  color: #cbcbd1;
+  padding: 3em 0;
+  font-size: 23px;
+  font-weight: 500;
+  z-index: 1000;
+}
+
+.navbar .dropdown--iphone div {
+  width: 800px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.navbar .dropdown--iphone li {
+  line-height: 1.8;
+}
+
+.navbar .dropdown--support {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  background-color: rgb(21, 21, 21);
+  color: #cbcbd1;
+  padding: 3em 0;
+  font-size: 23px;
+  font-weight: 500;
+  z-index: 1000;
+}
+
+.navbar .dropdown--mac > div {
+  width: 800px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+
+.navbar .dropdown--ipad > div {
+  width: 800px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+
+.navbar .dropdown--iphone > div {
+  width: 800px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+
+.navbar .dropdown--support > div {
+  width: 800px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  gap: 4em;
+}
+
+.navbar .dropdown--support {
+  line-height: 1.7;
+}
+
+.navbar .dropdown--where {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  background-color: rgb(21, 21, 21);
+  color: #cbcbd1;
+  padding: 3em 0;
+  font-size: 23px;
+  font-weight: 500;
+  z-index: 1000;
+}
+
+.navbar .dropdown--where div {
+  width: 800px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.navbar .dropdown--where li {
+  line-height: 1.8;
+}
+
+.navbar .dropdown-wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.navbar .mac-drop:hover .dropdown--mac {
+  display: block;
+}
+
+.navbar .ipad-drop:hover .dropdown--ipad {
+  display: block;
+}
+
+.navbar .iphone-drop:hover .dropdown--iphone {
+  display: block;
+}
+
+.navbar .support-drop:hover .dropdown--support {
+  display: block;
+}
+
+.navbar .where-drop:hover .dropdown--where {
+  display: block;
+}
+
+.navbar .dropdown--ipad li a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+.navbar .dropdown--mac li a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+.navbar .dropdown--ipad li:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.navbar .dropdown--mac li:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.navbar .dropdown--iphone li a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+.navbar .dropdown--iphone li:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.navbar .dropdown--support li a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+.navbar .dropdown--support li:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.navbar .dropdown--where li a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+.navbar .dropdown--where li:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.navbar .explore {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.navbar .explorer {
+  font-size: 13px;
+  font-weight: 600;
+}
