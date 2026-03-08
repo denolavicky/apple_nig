@@ -1,0 +1,235 @@
+/* ================================================
+   LINEUP SECTION - Jerrie (iPhone page)
+   Scoped to .lineup — zero inline styles needed
+================================================ */
+
+.lineup {
+  width: 100% !important;
+  background-color: #ffffff !important;
+  padding: 100px 0 120px !important;
+  overflow: hidden !important;
+  display: block !important;
+}
+
+/* ---------- Title area ---------- */
+
+.lineup .lineup__inner {
+  padding: 0 0 0 100px !important;
+  display: block !important;
+}
+
+.lineup .lineup__title {
+  font-size: 48px !important;
+  font-weight: 600 !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.02em !important;
+  color: #1d1d1f !important;
+  margin: 0 0 60px 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+/* ---------- Horizontal scrolling row ---------- */
+
+.lineup .lineup__grid {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  gap: 24px !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  padding: 0 40px 20px 100px !important;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.lineup .lineup__grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---------- Product card ---------- */
+
+.lineup .lineup-product {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  flex: 0 0 300px !important;
+  min-width: 300px !important;
+  scroll-snap-align: start;
+}
+
+/* ---------- Image container ---------- */
+
+.lineup .lineup-product__image-wrap {
+  width: 100% !important;
+  aspect-ratio: 3 / 4 !important;
+  border-radius: 28px !important;
+  overflow: hidden !important;
+  margin: 0 0 20px 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: center !important;
+  height: 320px !important;
+}
+
+.lineup .lineup-product__image-wrap img {
+  width: 120% !important;
+  max-width: 120% !important;
+  height: 120% !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  transition: transform 0.3s ease;
+}
+
+.lineup .lineup-product__image-wrap:hover img {
+  transform: scale(1.04);
+}
+
+/* ---------- Card background gradients ---------- */
+
+.lineup .lineup-product--17pro .lineup-product__image-wrap {
+  background: linear-gradient(180deg, #3a3a3c 0%, #000000 100%) !important;
+}
+
+.lineup .lineup-product--air .lineup-product__image-wrap {
+  background: linear-gradient(180deg, #e8ecf0 0%, #b8c5d1 100%) !important;
+}
+
+.lineup .lineup-product--17 .lineup-product__image-wrap {
+  background: linear-gradient(180deg, #f0e6f5 0%, #d8c5e8 100%) !important;
+}
+
+.lineup .lineup-product--16 .lineup-product__image-wrap {
+  background: linear-gradient(180deg, #1a2a5e 0%, #0a1a3e 100%) !important;
+}
+
+.lineup .lineup-product--16e .lineup-product__image-wrap {
+  background: linear-gradient(180deg, #f5f5f7 0%, #e5e5ea 100%) !important;
+}
+
+/* ---------- Color dots ---------- */
+
+.lineup .lineup-product__colors {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 8px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 0 16px 0 !important;
+  padding: 0 !important;
+  min-height: 14px;
+}
+
+.lineup .lineup-product__dot {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  display: inline-block !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Dot colors */
+
+.lineup .lineup-product__dot--bronze {
+  background-color: #C47A38 !important;
+}
+
+.lineup .lineup-product__dot--dark {
+  background-color: #3B3B3D !important;
+}
+
+.lineup .lineup-product__dot--silver {
+  background-color: #D5D0CB !important;
+}
+
+.lineup .lineup-product__dot--cream {
+  background-color: #E3DEDA !important;
+}
+
+.lineup .lineup-product__dot--sky {
+  background-color: #D4E1EC !important;
+}
+
+.lineup .lineup-product__dot--peach {
+  background-color: #E8D5C8 !important;
+}
+
+.lineup .lineup-product__dot--green {
+  background-color: #B8D4A8 !important;
+}
+
+.lineup .lineup-product__dot--purple {
+  background-color: #C5A8D8 !important;
+}
+
+.lineup .lineup-product__dot--blue {
+  background-color: #2244AA !important;
+}
+
+.lineup .lineup-product__dot--pink {
+  background-color: #E8A8C5 !important;
+}
+
+.lineup .lineup-product__dot--white {
+  background-color: #E8E8EA !important;
+}
+
+/* ---------- "New" label ---------- */
+
+.lineup .lineup-product .lineup-product__label {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #bf4800 !important;
+  margin: 0 0 6px 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  min-height: 20px;
+}
+
+/* ---------- Product name ---------- */
+
+.lineup .lineup-product h3 {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  color: #1d1d1f !important;
+  margin: 0 0 8px 0 !important;
+  padding: 0 !important;
+}
+
+/* ---------- Description ---------- */
+
+.lineup .lineup-product p {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.4 !important;
+  color: #6e6e73 !important;
+  margin: 0 0 20px 0 !important;
+  padding: 0 !important;
+  min-height: 40px;
+}
+
+/* ---------- Learn more button ---------- */
+
+.lineup .lineup-product .lineup-product__link {
+  display: inline-block !important;
+  background-color: #0071e3 !important;
+  color: #fff !important;
+  padding: 10px 24px !important;
+  border-radius: 980px !important;
+  text-decoration: none !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+  border: none !important;
+}
+
+.lineup .lineup-product .lineup-product__link:hover {
+  background-color: #0077ed !important;
+}
